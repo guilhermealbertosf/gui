@@ -19,7 +19,6 @@ main{
 
 }
 header{
-    border: 1px solid black;
     grid-area: 1 / 1 / span 2 / -1;
 }
 section.frase{
@@ -27,22 +26,17 @@ section.frase{
     grid-area: 3 / 1 / span 1 / -1;
 }
 aside{
-    border: 1px solid black;
     grid-area: 5 / 1 / span 8 / 2;
 }
 section.projetos{
-    border: 1px solid black;
     grid-area: 5 / 2 / span 8 / -1;
 }
 section.importante{
-    border: 1px solid black;
     grid-area: 13 / 1 / span 3 / 2;
 }
 section.outro{
-    border: 1px solid black;
     grid-area: 13 / 2 / span 3 / -1;
 }
 footer{
-    border: 1px solid black;
     grid-area: -2 / 1 / -1 / -1;
 }

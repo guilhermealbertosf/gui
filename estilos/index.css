@@ -18,7 +18,7 @@ header{
     padding: 20px;
     background-color: #413697;
     color: white;
-
+    
 }
 
 /*section.frase*/
@@ -26,16 +26,19 @@ header{
     display: grid;
     place-content: center;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.088);
-    padding: 10px;
+    padding: 20px 10px;
+    margin-bottom: 7px;
 }
 .frase p{
-    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /*aside*/
 aside{
     text-align: justify;
     padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.092);
+    background-color: rgb(245, 245, 245);
 }
 aside abbr{
     text-decoration: none;
@@ -44,8 +47,10 @@ aside h1{
     margin-bottom: 20px;
 }
 aside section.formacao{
-    border: 1px solid black;
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 50px 0px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.437);
+
 }
 aside section.formacao h2{
     margin-bottom: 10px;
@@ -58,7 +63,7 @@ aside section.formacao p{
 
 
 aside section.qualificacoes{
-    border: 1px solid black;
+    padding: 20px 5px 0px 5px;
 }
 aside section.qualificacoes h2{
     margin: 0px 0px 20px 0px;
@@ -66,6 +71,9 @@ aside section.qualificacoes h2{
 aside section.qualificacoes ul{
     list-style-type: disc;
     padding: 20px;
+    margin: 0px -5px 50px -5px;
+    background-color: rgba(255, 255, 255, 0.437);
+
 }
 aside section.qualificacoes ul li{
     padding: 5px;
@@ -104,8 +112,8 @@ aside section.qualificacoes ul li{
 section.importante{
     display: grid;
     place-content: center;
-    text-align: justify;
-    padding: 10px;
+    padding: 5vh 20px;
+    background-color: #4136970e;
 }
 
 /*section.outro*/
