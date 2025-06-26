@@ -78,7 +78,10 @@ aside section.qualificacoes ul{
 aside section.qualificacoes ul li{
     padding: 5px;
 }
-
+aside section.qualificacoes .soft-skills a{
+    text-decoration: none;
+    color: black;
+}
 
 /*section.projetos*/
 .projetos h1{
@@ -105,6 +108,12 @@ aside section.qualificacoes ul li{
     color: black;
     display: block;
     padding: 20px;
+}
+@media screen and (min-width: 740px) {
+    .projetos h1{
+        background-color: white;
+        color: #413697;
+    }
 }
 
 
