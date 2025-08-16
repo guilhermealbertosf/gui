@@ -18,6 +18,15 @@ main{
     gap: 10px;
 
 }
+header h1{
+    font-size: 3em;
+}
+.projetos h1{
+    font-size: 2em;
+}
+
+/*Grades*/
+
 header{
     grid-area: 1 / 1 / span 2 / -1;
 }
@@ -29,13 +38,15 @@ aside{
     grid-area: 5 / 1 / span 8 / 2;
 }
 section.projetos{
-    grid-area: 5 / 2 / span 8 / -1;
+    grid-area: 5 / 2 / span 6 / -1;
 }
 section.importante{
-    grid-area: 13 / 1 / span 3 / 2;
+    grid-area: 13 / 1 / span 3 / -1;
 }
 section.outro{
-    grid-area: 13 / 2 / span 3 / -1;
+    grid-area: 11 / 2 / span 2 / -1;
+   
+
 }
 footer{
     grid-area: -2 / 1 / -1 / -1;
