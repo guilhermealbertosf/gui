@@ -7,16 +7,17 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*SOMENTE AS CONFIGURAÇÕES DA GRADE*/
+/*Configurações da midia*/
 
 
 main{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: repeat(16, 1fr);
+    grid-template-rows: repeat(12, 1fr);
     grid-auto-rows: 50px;
     gap: 10px;
 
+    
 }
 header h1{
     font-size: 3em;
@@ -24,30 +25,41 @@ header h1{
 .projetos h1{
     font-size: 2em;
 }
-
-/*Grades*/
-
-header{
-    grid-area: 1 / 1 / span 2 / -1;
+section.importante{
+    text-align: center;
 }
 section.frase{
-
-    grid-area: 3 / 1 / span 1 / -1;
+    padding: 30px 0px;
 }
+
+
+
+/*Só configurações das Grades*/
+header{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+
+header h1{
+    grid-area: 1 / 1 / 3 / -1;
+}
+section.frase{
+    grid-area: 3 / 1 / 4 / -1;
+}
+
 aside{
-    grid-area: 5 / 1 / span 8 / 2;
+    grid-area: 2 / 1 / span 8 / 2;
 }
 section.projetos{
-    grid-area: 5 / 2 / span 6 / -1;
+    grid-area: 2 / 2 / span 6 / -1;
 }
 section.importante{
-    grid-area: 13 / 1 / span 3 / -1;
+    grid-area: 10 / 1 / span 3 / -1;
 }
 section.outro{
-    grid-area: 11 / 2 / span 2 / -1;
-   
-
+    grid-area: 7 / 2 / span 3 / -1;
 }
 footer{
-    grid-area: -2 / 1 / -1 / -1;
+    padding: 30px;
 }

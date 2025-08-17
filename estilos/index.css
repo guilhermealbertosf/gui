@@ -2,8 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap'); /*Fonte: Audiowide*/
 
 
-
-
 *{
     margin: 0;
     padding: 0;
@@ -17,19 +15,21 @@
     --cor2: #3b5fd3;
 }
 
+body{
+    background-color: rgb(241, 241, 241);
+}
 
 main{
+    max-width: 900px;
+    margin: auto;
     text-align: center;
 }
 
 /*header*/
 header{
-    display: grid;
-    place-items: center;
-
-    padding: 20px;
+    text-align: center;
     background-color: var(--cor1);
-    color: #ffffff;
+    
     
 }
 
@@ -37,6 +37,8 @@ header{
 header h1{
     font-family: "Audiowide", Arial, sans-serif;
     place-content: center;
+    color: #ffffff;
+    padding: 20px;
 }
 
 
@@ -46,10 +48,14 @@ header h1{
     place-content: center;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.088);
     padding: 20px 10px;
-    margin-bottom: 7px;
+
+    background-color: white;
+    
 }
 .frase p{
     font-family: Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: white;
 }
 
 /*aside*/
@@ -142,6 +148,7 @@ section.importante{
     place-content: center;
     padding: 5vh 20px;
     background-color: #4136970e;
+    text-align: left;
 }
 
 /*section.outro*/
@@ -149,6 +156,7 @@ section.outro{
     display: grid;
     place-content: center;
     padding-top: 5px;
+    background-color: rgb(249, 246, 245);
 }
 section.outro img{
     display: block;
@@ -159,8 +167,8 @@ section.outro img{
 footer{
     display: grid;
     place-content: center;
-    margin-top: 10px;
-    padding: 5px;
+    margin-top: 20px;
+    padding: 10px;
     background-color: var(--cor1);
     color: white;
 }
