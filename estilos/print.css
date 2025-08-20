@@ -1,0 +1,19 @@
+
+
+body{
+    background-color: red;
+}
+section h3{
+    padding: 10px;
+}
+section.qualificacoes, section h3{
+    border: 1px solid rgba(84, 84, 84, 0.107);
+}
+
+section.importante, footer{
+    display: none;
+}
+
+.destaque{
+    color: black;
+}

@@ -25,10 +25,7 @@ main{
     margin: auto;
     text-align: center;
 }
-a{
-    text-decoration: none;
-    color: black;
-}
+
 /*header*/
 header{
     text-align: center;
@@ -108,9 +105,6 @@ aside section.qualificacoes ul li{
     padding: 5px;
     
 }
-aside .tecnologia a, aside .soft-skills a{
-    
-}
 
 /*section.projetos*/
 .projetos h1{
@@ -182,4 +176,11 @@ footer{
     color: var(--cor3);
     text-decoration: none;
     font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+abbr{
+    text-decoration: none;
 }
