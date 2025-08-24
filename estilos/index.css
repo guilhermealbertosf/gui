@@ -59,7 +59,8 @@ header h1{
     background-color: white;
 }
 
-/*aside*/
+/* aside:
+ Formação acadêmica + Cursos e Experiências */
 aside{
     text-align: justify;
     padding: 10px;
@@ -72,6 +73,15 @@ aside abbr{
 aside h1{
     margin-bottom: 20px;
 }
+aside h2{
+    background-color: rgb(215, 215, 215);
+    color:  rgb(26, 19, 73);
+    font-size: 1.3em;
+    border-radius: 0px 10px 10px 0px;
+    padding: 3px;
+    margin: 0px 0px 10px -15px;
+}
+
 aside section.formacao{
     margin: 0px 0px 50px 0px;
     padding: 5px;
@@ -79,7 +89,7 @@ aside section.formacao{
 
 }
 aside section.formacao h2{
-    margin-bottom: 10px;
+    /*margin: 0px 0px 20px 0px;*/
 }
 aside section.formacao p{
     padding: 5px;
@@ -92,18 +102,35 @@ aside section.qualificacoes{
     padding: 20px 5px 0px 5px;
 }
 aside section.qualificacoes h2{
-    margin: 0px 0px 20px 0px;
+    /*margin: 0px 0px 20px 0px;*/
 }
 aside section.qualificacoes ul{
-    list-style-type: disc;
+    list-style-type: none; /*disc*/
     padding: 20px;
     margin: 0px -5px 50px -5px;
     background-color: rgba(255, 255, 255, 0.437);
+    
 
 }
 aside section.qualificacoes ul li{
-    padding: 5px;
+    background-color: var(--cor2);
+    border-radius: 5px 0px 0px 5px;
+    padding: 0px 0px 0px 5px;
+    margin: 10px 0px;
     
+    
+}
+
+aside section.qualificacoes ul div{
+    background-color:  rgb(243, 243, 243);
+    border-radius: 5px 0px 0px 5px;
+    padding: 5px;
+}
+
+aside section.qualificacoes ul p{
+    background-color: rgba(255, 255, 255, 0.568);
+    padding: 5px;
+    border-radius: 2px;
 }
 
 /*section.projetos*/
@@ -172,14 +199,18 @@ footer{
 
 
 /*Outras configurações*/
-.destaque{
-    color: var(--cor3);
-    text-decoration: none;
-    font-weight: bold;
-}
 a{
     text-decoration: none;
     color: black;
+}
+.destaque1{ /* Usado para destacar o "ETE PORTO..." e o Email para contato: "gmight..."*/
+    color: var(--cor3);
+    font-weight: bold;
+}
+.destaque2{ /*Usado no campo onde há informações dos cursos*/
+    color: #042768;
+    font-weight: 550;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 abbr{
     text-decoration: none;
