@@ -12,28 +12,36 @@
 
 :root{
     --cor1: #413697;
-    --cor2: #3b5fd3;
+    --cor2: #3b43d396;
     --cor3: #3a2f92;;
 }
 
 body{
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(232, 229, 245);
 }
 
 main{
     max-width: 900px;
     margin: auto;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.488);
 }
 
 /*header*/
 header{
     text-align: center;
     background-color: var(--cor1);
-    
+    padding-top: 20px;
     
 }
 
+#foto-perfil{
+    display: block;
+    height: 140px;
+    margin: auto;
+    border-radius: 50%;
+    border: 3.1px solid #d7d5e6;
+}
 
 header h1{
     font-family: "Audiowide", Arial, sans-serif;
@@ -94,7 +102,6 @@ aside section.formacao h2{
 aside section.formacao p{
     padding: 5px;
 }
-
 
 
 
@@ -172,6 +179,11 @@ section.importante{
     padding: 5vh 20px;
     background-color: #4136970e;
     text-align: left;
+    
+}
+section.importante p{
+    font-size: 1.3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Lucida Sans', 'Verdana', sans-serif;
 }
 
 /*section.outro*/
@@ -208,7 +220,7 @@ a{
     font-weight: bold;
 }
 .destaque2{ /*Usado no campo onde há informações dos cursos*/
-    color: #042768;
+    color: #323138;
     font-weight: 550;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
