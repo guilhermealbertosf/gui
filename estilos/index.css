@@ -11,13 +11,14 @@
 
 
 :root{
-    --cor1: #413697;
-    --cor2: #3b43d396;
+    --cor1: #007bcc;
+    --cor2: #459ce8e9;
     --cor3: #3a2f92;;
+    --cor4: #526973f3;
 }
 
 body{
-    background-color: rgb(232, 229, 245);
+    background-color: #4a78aa2b;
 }
 
 main{
@@ -82,13 +83,14 @@ aside h1{
     margin-bottom: 20px;
 }
 aside h2{
-    background-color: rgb(241, 241, 241);
-    color:  rgb(20, 15, 51);
+    background-color: var(--cor4);
+    color:  rgb(255, 255, 255);
     font-size: 1.3em;
     border-radius: 0px 10px 10px 0px;
     border: 1px solid rgba(0, 0, 0, 0.036);
     padding: 3px;
     margin: 0px 0px 10px -15px;
+    text-align: center;
 }
 aside h3{
     background-color: rgba(223, 223, 223, 0.438);
@@ -103,9 +105,14 @@ aside section.formacao{
     margin: 0px 0px 50px 0px;
     padding: 5px;
     background-color: rgba(255, 255, 255, 0.437);
+    text-align: center;
 
 }
 aside section.formacao h2{
+    /*margin: 0px 0px 20px 0px;*/
+    margin-bottom: 20px;
+}
+aside section.formacao h3{
     /*margin: 0px 0px 20px 0px;*/
 }
 aside section.formacao p{
