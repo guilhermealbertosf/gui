@@ -11,10 +11,10 @@
 
 
 :root{
-    --cor1: #007bcc;
+    --cor1: #0a3668;
     --cor2: #459ce8e9;
-    --cor3: #3a2f92;;
-    --cor4: #526973f3;
+    --cor3: #3a2f92;
+    --cor4: #afbcc2f3;
 }
 
 body{
@@ -31,7 +31,7 @@ main{
 /*header*/
 header{
     text-align: center;
-    background-color: var(--cor1);
+    background: var(--cor1);
     padding-top: 20px;
     
 }
@@ -206,7 +206,7 @@ section.importante p{
 section.outro{
     display: grid;
     place-content: center;
-    padding-top: 5px;
+    padding: 10px 0px;
     background-color: rgb(249, 246, 245);
 }
 section.outro img{
