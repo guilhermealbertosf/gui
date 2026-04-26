@@ -11,10 +11,10 @@
 
 
 :root{
-    --cor1: #0a3668;
-    --cor2: #459ce8e9;
+    --cor1: #0a3668d6;
+    --cor2: #36B3A3;
     --cor3: #3a2f92;
-    --cor4: #afbcc2f3;
+    --cor4: #32a095c1;
 }
 
 body{
@@ -25,15 +25,24 @@ main{
     max-width: 900px;
     margin: auto;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.488);
+    background: rgba(255, 255, 255, 0.488);
 }
 
 /*header*/
 header{
     text-align: center;
-    background: var(--cor1);
+    background: radial-gradient(#bdbdf034, #ffffff);
     padding-top: 20px;
+    transition-duration: 4s;
     
+}
+header:hover{
+    background: #e5ddffb3;
+    transition-duration: 10s;
+}
+header:active{
+    background: radial-gradient(#b36e3613, #8080800f);
+    transition-duration: 10s;
 }
 
 #foto-perfil{
@@ -42,6 +51,9 @@ header{
     margin: auto;
     border-radius: 50%;
     border: 3.1px solid #d7d5e6;
+    background-color: var(--cor1);
+    transition-duration: 2s;
+
 }
 
 header h1{
@@ -49,8 +61,14 @@ header h1{
     place-content: center;
     color: #ffffff;
     padding: 20px;
+    color: var(--cor1);
 }
 
+header #botao-modo-escuro{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
 
 /*section.frase*/
 .frase{
@@ -83,15 +101,26 @@ aside h1{
     margin-bottom: 20px;
 }
 aside h2{
-    background-color: var(--cor4);
+    background-color: var(--cor1);
     color:  rgb(255, 255, 255);
     font-size: 1.3em;
-    border-radius: 0px 10px 10px 0px;
-    border: 1px solid rgba(0, 0, 0, 0.036);
-    padding: 3px;
-    margin: 0px 0px 10px -15px;
+    border-radius: 0px 0% 20px 0px;
+    padding: 8px;
+    margin: 0px 0px 10px -16px;
     text-align: center;
+    transition-duration: 4s;
 }
+
+h2#titulo_experiencias:hover{
+    background-color: rgba(64, 112, 183, 0.854);
+    font-size: 16pt;
+}
+h2#titulo_experiencias:active{
+    background-color: rgba(4, 46, 93, 0.74);
+    font-size: 14pt;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.119);
+}
+
 aside h3{
     background-color: rgba(223, 223, 223, 0.438);
     padding: 5px;
@@ -130,36 +159,50 @@ aside section.qualificacoes h2{
 aside section.qualificacoes ul{
     list-style-type: none; /*disc*/
     padding: 20px;
-    margin: 0px -5px 50px -5px;
+    margin: -2% -2.7% -1% -2.7%;
+    border-radius: 0 6% 0 0;
     background-color: rgba(255, 255, 255, 0.437);
-    
-
+}
+#experiencias_comportamentais{
+    display: none;
+    transition-duration: 4s;
 }
 aside section.qualificacoes ul li{
     background-color: var(--cor2);
     border-radius: 5px 0px 0px 5px;
     padding: 0px 0px 0px 5px;
-    margin: 10px 0px;
-    
-    
+    margin: 10px 0px;   
 }
-
 aside section.qualificacoes ul div{
     background-color:  rgb(243, 243, 243);
     border-radius: 5px 0px 0px 5px;
     padding: 5px;
 }
-
+aside section.qualificacoes ul div:hover{
+    font-size: 12.5pt;
+    transition-duration: 1s;
+}
 aside section.qualificacoes ul p{
     background-color: rgba(255, 255, 255, 0.568);
     padding: 5px;
     border-radius: 2px;
 }
 
+aside #experiencias_comportamentais{
+    background-color: var(--cor4);
+    transition-duration: 4s;
+}
+aside #experiencias_comportamentais div{
+    background-color: #ffffff;
+}
+
+
+
+
 /*section.projetos*/
 .projetos h1{
     padding-bottom: 20px;
-    background-color: var(--cor1);
+    background-color: var(--cor2);
     color: white;
     font-family: "Audiowide", Arial, sans-serif;
 }

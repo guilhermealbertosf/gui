@@ -37,3 +37,45 @@ function embaralhar(){
     txtautor.innerText = autores[nfrases[0]]
     
 }
+
+let estado_conhecimento_tecnico = "true"
+let estado_experiencias_comportamentais = "false"
+
+function recolher(x){
+    let conhecimento_tecnico = document.getElementById("conhecimento_tecnico")
+    
+    let experiencias_comportamentais = document.getElementById("experiencias_comportamentais")
+
+    let titulo_experiencias = document.querySelector("#titulo_experiencias")
+    
+    if( x == "c" ){
+        /*
+        if(estado_conhecimento_tecnico == "true"){
+            conhecimento_tecnico.style.display = 'none'
+            estado_conhecimento_tecnico = "false"
+        }
+        else{
+            conhecimento_tecnico.style.display = 'block'
+            estado_conhecimento_tecnico = "true"
+        }
+        
+        */
+    }
+    else if( x == "e"){
+        if(estado_experiencias_comportamentais == "true"){
+            experiencias_comportamentais.style.display = "none"
+            estado_experiencias_comportamentais = "false"
+            titulo_experiencias.innerText = "EXPERIÊNCIAS..."
+        }
+        else{
+            experiencias_comportamentais.style.display = "block"
+            estado_experiencias_comportamentais = "true"
+            
+            titulo_experiencias.innerText = "EXPERIÊNCIAS"
+        }
+    }
+        
+    else{
+        alert("ERRO")
+    }
+}
