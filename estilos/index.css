@@ -11,10 +11,11 @@
 
 
 :root{
-    --cor1: #0a3668d6;
+    --cor1: #0a3668;
     --cor2: #36B3A3;
     --cor3: #3a2f92;
     --cor4: #32a095c1;
+    --cor5: #474747;
 }
 
 body{
@@ -61,7 +62,7 @@ header h1{
     place-content: center;
     color: #ffffff;
     padding: 20px;
-    color: var(--cor1);
+    color: #3a3a3a;
 }
 
 header #botao-modo-escuro{
@@ -101,7 +102,7 @@ aside h1{
     margin-bottom: 20px;
 }
 aside h2{
-    background-color: var(--cor1);
+    background-color: var(--cor5);
     color:  rgb(255, 255, 255);
     font-size: 1.3em;
     border-radius: 0px 0% 20px 0px;
