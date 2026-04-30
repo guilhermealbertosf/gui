@@ -112,7 +112,7 @@ aside h2{
     transition-duration: 4s;
 }
 
-h2#titulo_experiencias:hover{
+h2#titulo_experiencias:hover, h2#titulo_ferramentas:hover{
     background-color: rgba(64, 112, 183, 0.854);
     font-size: 16pt;
 }
@@ -151,52 +151,51 @@ aside section.formacao p{
 
 
 
-aside section.qualificacoes{
+section.qualificacoes{
     padding: 20px 5px 0px 5px;
 }
-aside section.qualificacoes h2{
+section.qualificacoes h2{
     /*margin: 0px 0px 20px 0px;*/
 }
-aside section.qualificacoes ul{
+section.qualificacoes ul{
     list-style-type: none; /*disc*/
     padding: 20px;
-    margin: -2% -2.7% -1% -2.7%;
+    margin: -2% -2.7% 0% -2.7%;
     border-radius: 0 6% 0 0;
     background-color: rgba(255, 255, 255, 0.437);
 }
-#experiencias_comportamentais{
+#experiencias_comportamentais , #ferramentas{
     display: none;
     transition-duration: 4s;
 }
-aside section.qualificacoes ul li{
+section.qualificacoes ul li{
     background-color: var(--cor2);
     border-radius: 5px 0px 0px 5px;
     padding: 0px 0px 0px 5px;
     margin: 10px 0px;   
 }
-aside section.qualificacoes ul div{
+section.qualificacoes ul div{
     background-color:  rgb(243, 243, 243);
     border-radius: 5px 0px 0px 5px;
     padding: 5px;
 }
-aside section.qualificacoes ul div:hover{
+section.qualificacoes ul div:hover{
     font-size: 12.5pt;
     transition-duration: 1s;
 }
-aside section.qualificacoes ul p{
+section.qualificacoes ul p{
     background-color: rgba(255, 255, 255, 0.568);
     padding: 5px;
     border-radius: 2px;
 }
 
-aside #experiencias_comportamentais{
+#experiencias_comportamentais{
     background-color: var(--cor4);
     transition-duration: 4s;
 }
-aside #experiencias_comportamentais div{
+#experiencias_comportamentais div{
     background-color: #ffffff;
 }
-
 
 
 

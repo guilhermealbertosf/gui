@@ -40,13 +40,16 @@ function embaralhar(){
 
 let estado_conhecimento_tecnico = "true"
 let estado_experiencias_comportamentais = "false"
+let estado_ferramentas = "false"
 
 function recolher(x){
     let conhecimento_tecnico = document.getElementById("conhecimento_tecnico")
     
     let experiencias_comportamentais = document.getElementById("experiencias_comportamentais")
-
     let titulo_experiencias = document.querySelector("#titulo_experiencias")
+
+    let ferramentas = document.getElementById("ferramentas")
+    let titulo_ferramentas = document.getElementById("titulo_ferramentas")
     
     if( x == "c" ){
         /*
@@ -74,7 +77,20 @@ function recolher(x){
             titulo_experiencias.innerText = "EXPERIÊNCIAS"
         }
     }
+    else if( x == "f"){
         
+        if(estado_ferramentas == "true"){
+            ferramentas.style.display = "none"
+            estado_ferramentas = "false"
+            titulo_ferramentas.innerText = "FERRAMENTAS..."
+        }
+        else{
+            ferramentas.style.display = "block"
+            estado_ferramentas = "true"
+            
+            titulo_ferramentas.innerText = "FERRAMENTAS"
+        }
+    }    
     else{
         alert("ERRO")
     }
