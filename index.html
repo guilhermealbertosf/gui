@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículo digital - F.S. Guilherme</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="midia/icone-gui.png" type="image/x-icon">
 
     <link rel="stylesheet" href="estilos/index.css">
     <link rel="stylesheet" href="estilos/index-grid.css" media="screen and (min-width: 740px)">
     <link rel="stylesheet" href="estilos/print.css" media="print">
 
+
 </head>
 <body>
     <header>
-        <img id="foto-perfil" src="midia/icone-gui-300px.png" alt="foto de perfil"> 
+        <img data-aos="zoom-out" id="foto-perfil" src="midia/icone-gui-300px.png" alt="foto de perfil"> 
         <h1>Guilherme ASF</h1>
     
-        <section class="frase">
+        <section data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500" class="frase">
             <div class="conteiner">
                 <p id="frase">"Eu não preciso saber o que fazer, só preciso saber para onde olhar"</p>
                 <p id="autor">FS Gui</p>
@@ -33,7 +37,9 @@
                 <h2>FORMAÇÃO ACADÊMICA</h2>
 
                 <p>Ensino Médio Técnico - 3º Ano</p>
-                <p><a href="https://www.portodigital.org/" target="_blank" rel="external" class="destaque1">ETE PORTO DIGITAL</a></p>
+                <p>
+                    <a href="https://www.portodigital.org/" target="_blank" rel="external" class="destaque1">ETE PORTO DIGITAL</a>
+                </p>
                 <p>Desenvolvimento de Sistemas</p>
 
                 
@@ -46,7 +52,7 @@
                 <h2 onclick="recolher('c')">CONHECIMENTO TÉCNICO</h2>
                 <ul style="display: block;" id="conhecimento_tecnico" class="tecnologia">
 
-                    <li>
+                    <li data-aos="fade-right">
                         <div class="conteiner">
                             <p class="destaque2">
                                 <a href="https://www.estudonauta.com/" rel="next" target="_blank" class="destaque2">Engenharia de Prompt </a>
@@ -55,7 +61,7 @@
                         </div>
                     </li>
 
-                    <li>
+                    <li data-aos="fade-left">
                         <div class="conteiner">
                             <abbr title="Python, JavaScript, html5, css3, Banco de Dados, Flask. Lidar com todas as camadas de um projeto.">
                                 <p class="destaque2">
@@ -68,7 +74,7 @@
                         </div>                        
                     </li>
 
-                    <li>
+                    <li data-aos="fade-right">
                         <div class="conteiner">
                             <p class="destaque2">
                                 <a href="https://www.estudonauta.com/" rel="next" target="_blank" class="destaque2">Cibersegurança </a>
@@ -85,14 +91,14 @@
                              
                         </li>
                     -->
-                    <li>
+                    <li data-aos="fade-left">
                         <div class="conteiner">
                             <p class="destaque2">Manunteção de Computadores</p>
                             <p>(Completo em 08/12/2023) - NTECI, Olinda.</p>
                         </div>
                          
                     </li>
-                    <li>
+                    <li data-aos="fade-right">
                         <div class="conteiner">
                             <p class="destaque2">Informática</p> <p>(Completo em 08/11/2023) - NTECI, Olinda.</p>
                         </div>
@@ -100,9 +106,10 @@
                 </ul>
 
 
-                <div id="conteiner_experiencias">
-                    <h2 id="titulo_experiencias" onclick="recolher('e')">EXPERIÊNCIAS <svg style="fill: white;" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M607.5-372.5Q660-425 660-500t-52.5-127.5Q555-680 480-680t-127.5 52.5Q300-575 300-500t52.5 127.5Q405-320 480-320t127.5-52.5Zm-204-51Q372-455 372-500t31.5-76.5Q435-608 480-608t76.5 31.5Q588-545 588-500t-31.5 76.5Q525-392 480-392t-76.5-31.5ZM214-281.5Q94-363 40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200q-146 0-266-81.5ZM480-500Zm207.5 160.5Q782-399 832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280q113 0 207.5-59.5Z"/></svg></h2>
-                    <ul id="experiencias_comportamentais" class="soft-skills">
+                <div id="conteiner_experiencias" >
+                    <h2 data-aos="flip-left" id="titulo_experiencias" onclick="recolher('e')">EXPERIÊNCIAS <svg style="fill: white;" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M607.5-372.5Q660-425 660-500t-52.5-127.5Q555-680 480-680t-127.5 52.5Q300-575 300-500t52.5 127.5Q405-320 480-320t127.5-52.5Zm-204-51Q372-455 372-500t31.5-76.5Q435-608 480-608t76.5 31.5Q588-545 588-500t-31.5 76.5Q525-392 480-392t-76.5-31.5ZM214-281.5Q94-363 40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200q-146 0-266-81.5ZM480-500Zm207.5 160.5Q782-399 832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280q113 0 207.5-59.5Z"/></svg></h2>
+                    <ul id="experiencias" class="soft-skills">
+                        
                         <li>
                             <div class="conteiner">
                                 <p class="destaque2">Protagonismo Juvenil </p>
@@ -153,7 +160,7 @@
                                     </a>
                                 </p>
                                 <span>
-                                    Uninivo, Olinda / 2024
+                                    Uninovo, Olinda / 2024
                                 </span>
                             </div>
                         </li>
@@ -177,7 +184,7 @@
                 </div>
 
                 <div id="conteiner_ferramentas">
-                    <h2 id="titulo_ferramentas" onclick="recolher('f')">FERRAMENTAS <svg style="fill: white;" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M607.5-372.5Q660-425 660-500t-52.5-127.5Q555-680 480-680t-127.5 52.5Q300-575 300-500t52.5 127.5Q405-320 480-320t127.5-52.5Zm-204-51Q372-455 372-500t31.5-76.5Q435-608 480-608t76.5 31.5Q588-545 588-500t-31.5 76.5Q525-392 480-392t-76.5-31.5ZM214-281.5Q94-363 40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200q-146 0-266-81.5ZM480-500Zm207.5 160.5Q782-399 832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280q113 0 207.5-59.5Z"/></svg></h2>
+                    <h2 data-aos="flip-left" id="titulo_ferramentas" onclick="recolher('f')">FERRAMENTAS <svg style="fill: white;" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M607.5-372.5Q660-425 660-500t-52.5-127.5Q555-680 480-680t-127.5 52.5Q300-575 300-500t52.5 127.5Q405-320 480-320t127.5-52.5Zm-204-51Q372-455 372-500t31.5-76.5Q435-608 480-608t76.5 31.5Q588-545 588-500t-31.5 76.5Q525-392 480-392t-76.5-31.5ZM214-281.5Q94-363 40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200q-146 0-266-81.5ZM480-500Zm207.5 160.5Q782-399 832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280q113 0 207.5-59.5Z"/></svg></h2>
                     <ul id="ferramentas">
                         <li>
                             <div class="conteiner">
@@ -207,7 +214,7 @@
                             <div class="conteiner">
                                 <p class="destaque2">IA's</p>
                                 <span>
-                                    Engenharia de prompt aplicada: Chatgpt, Geminy, Deepseek, NotebookLM
+                                    Engenharia de prompt aplicada.
                                 </span>
                             </div>
                         </li>
@@ -234,7 +241,7 @@
         </aside>
 
 
-        <section class="projetos">
+        <section class="projetos" data-aos="fade-up" data-aos-duration="3000">
             <h1>Projetos</h1>
             <nav>
                 <p>
@@ -290,7 +297,7 @@
                     </abbr>
                 </p>
                 <p>
-                    <abbr title="Interface de simulação de login.">
+                    <abbr title="Calculadora">
                         <img src="data:image/jpeg;base64,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">
                         <a href="https://guilhermealbertosf.github.io/calculadora-cientifica" target="_blank" rel="external">Calculadora científica</a>
                     </abbr>
@@ -299,13 +306,18 @@
             </nav>
         </section>
 
-        <section class="importante">
+
+
+
+        <section data-aos="zoom-in" class="importante" 
+        >
             <p>
                 Esta plataforma foi criada com o intuito de centralizar o acesso as minhas informações profissionais, acadêmicas, e principalmente aos projetos que desenvolvi na área da tecnologia.
             </p>
         </section>
 
-        <section class="outro">
+        <section class="outro"
+        data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
             <p>
                 <p>Quer que eu faça um site para você? entre em <strong>Contato</strong> pelo e-mail:
             </p>
@@ -319,6 +331,12 @@
     <footer>
         <p>Site criado por Guilherme ASF. Todos os direitos reservados</p>
     </footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script src="javascript/script.js"></script>
+
+
 </body>
 </html>

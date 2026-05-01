@@ -1,4 +1,5 @@
 
+AOS.init();
 
 let nfrases = [0,1,2,3,4,5]
 
@@ -39,13 +40,13 @@ function embaralhar(){
 }
 
 let estado_conhecimento_tecnico = "true"
-let estado_experiencias_comportamentais = "false"
+let estado_experiencias = "false"
 let estado_ferramentas = "false"
 
 function recolher(x){
     let conhecimento_tecnico = document.getElementById("conhecimento_tecnico")
     
-    let experiencias_comportamentais = document.getElementById("experiencias_comportamentais")
+    let experiencias = document.getElementById("experiencias")
     let titulo_experiencias = document.querySelector("#titulo_experiencias")
 
     let ferramentas = document.getElementById("ferramentas")
@@ -65,14 +66,14 @@ function recolher(x){
         */
     }
     else if( x == "e"){
-        if(estado_experiencias_comportamentais == "true"){
-            experiencias_comportamentais.style.display = "none"
-            estado_experiencias_comportamentais = "false"
+        if(estado_experiencias == "true"){
+            experiencias.style.display = "none"
+            estado_experiencias = "false"
             titulo_experiencias.innerText = "EXPERIÊNCIAS..."
         }
         else{
-            experiencias_comportamentais.style.display = "block"
-            estado_experiencias_comportamentais = "true"
+            experiencias.style.display = "block"
+            estado_experiencias = "true"
             
             titulo_experiencias.innerText = "EXPERIÊNCIAS"
         }

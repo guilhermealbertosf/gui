@@ -11,7 +11,7 @@
 
 
 :root{
-    --cor1: #0a3668;
+    --cor1: #0a4268;
     --cor2: #36B3A3;
     --cor3: #3a2f92;
     --cor4: #32a095c1;
@@ -32,7 +32,6 @@ main{
 /*header*/
 header{
     text-align: center;
-    background: radial-gradient(#bdbdf034, #ffffff);
     padding-top: 20px;
     transition-duration: 4s;
     
@@ -164,7 +163,7 @@ section.qualificacoes ul{
     border-radius: 0 6% 0 0;
     background-color: rgba(255, 255, 255, 0.437);
 }
-#experiencias_comportamentais , #ferramentas{
+#experiencias , #ferramentas{
     display: none;
     transition-duration: 4s;
 }
@@ -182,6 +181,7 @@ section.qualificacoes ul div{
 section.qualificacoes ul div:hover{
     font-size: 12.5pt;
     transition-duration: 1s;
+    background-color: rgb(218, 218, 218);
 }
 section.qualificacoes ul p{
     background-color: rgba(255, 255, 255, 0.568);
@@ -189,11 +189,11 @@ section.qualificacoes ul p{
     border-radius: 2px;
 }
 
-#experiencias_comportamentais{
+#experiencias{
     background-color: var(--cor4);
     transition-duration: 4s;
 }
-#experiencias_comportamentais div{
+#experiencias div{
     background-color: #ffffff;
 }
 

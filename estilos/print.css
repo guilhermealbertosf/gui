@@ -10,8 +10,13 @@ section.qualificacoes{
     border: 1px solid rgba(84, 84, 84, 0.107);
 }
 
+#experiencias{
+    display: block;
+}
 
-
+#ferramentas{
+    display: none;
+}
 
 .projetos, section.importante, footer{
     display: none;
