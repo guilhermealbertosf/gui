@@ -11,22 +11,30 @@
 
 
 :root{
-    --cor1: #0a4268;
-    --cor2: #36B3A3;
+    --cor0: #ffffff;
+    --cor1: #2B2E33;
+    --cor2: #436394;
     --cor3: #3a2f92;
-    --cor4: #32a095c1;
-    --cor5: #474747;
+    
+    --cor5: #3F4D61;
+   
+    --cor7: #0d6cfa;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 body{
-    background-color: #4a78aa2b;
+    background-color: var(--cor0) ;
 }
 
 main{
     max-width: 900px;
     margin: auto;
     text-align: center;
-    background: rgba(255, 255, 255, 0.488);
+    background: var(--cor0);
 }
 
 /*header*/
@@ -34,17 +42,8 @@ header{
     text-align: center;
     padding-top: 20px;
     transition-duration: 4s;
-    
+    background-color: white;
 }
-header:hover{
-    background: #e5ddffb3;
-    transition-duration: 10s;
-}
-header:active{
-    background: radial-gradient(#b36e3613, #8080800f);
-    transition-duration: 10s;
-}
-
 #foto-perfil{
     display: block;
     height: 140px;
@@ -55,7 +54,6 @@ header:active{
     transition-duration: 2s;
 
 }
-
 header h1{
     font-family: "Audiowide", Arial, sans-serif;
     place-content: center;
@@ -64,11 +62,7 @@ header h1{
     color: #3a3a3a;
 }
 
-header #botao-modo-escuro{
-    display: flex;
-    justify-content: right;
-    align-items: center;
-}
+
 
 /*section.frase*/
 .frase{
@@ -85,6 +79,9 @@ header #botao-modo-escuro{
     text-align: center;
     background-color: white;
 }
+
+
+
 
 /* aside:
  Formação acadêmica + Cursos e Experiências */
@@ -223,12 +220,14 @@ section.qualificacoes ul p{
     display: block;
     padding: 20px;
 }
+/*
 @media screen and (min-width: 740px) {
     .projetos h1{
         background-color: white;
         color: var(--cor1);
     }
 }
+*/
 
 
 /*section.importante*/
@@ -236,7 +235,7 @@ section.importante{
     display: grid;
     place-content: center;
     padding: 5vh 20px;
-    background-color: #4136970e;
+    background-color: var(--cor0);
     text-align: left;
     
 }
@@ -244,6 +243,10 @@ section.importante p{
     font-size: 1.3em;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Lucida Sans', 'Verdana', sans-serif;
 }
+
+
+
+
 
 /*section.outro*/
 section.outro{
@@ -267,6 +270,9 @@ footer{
     background-color: var(--cor1);
     color: white;
 }
+
+
+
 
 
 /*Outras configurações*/
