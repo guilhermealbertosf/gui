@@ -73,7 +73,7 @@ aside{
     grid-area: 1 / 1 / span 4 / 2;
 }
 section.projetos{
-    grid-area: 1 / 2 / span 4 / -1;
+    grid-area: 1 / 2 / span 3 / -1;
 }
 section.outro{
     grid-area: 4 / 2 / span 1 / -1;
