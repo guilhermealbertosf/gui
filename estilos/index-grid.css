@@ -23,7 +23,8 @@ main{
     grid-auto-rows: 50px;
     gap: 10px;
 
-    margin-top: 40px;
+    margin: 40px auto 100px auto;
+
     background: var(--cor-grid1);
 
     
