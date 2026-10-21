@@ -80,7 +80,14 @@ header h1{
 }
 
 
+section#informacoes{
+    padding: 10px;
+    text-align: center;
 
+}
+section#informacoes p{
+    padding: 10px;
+}
 
 /* aside:
  Formação acadêmica + Cursos e Experiências */
