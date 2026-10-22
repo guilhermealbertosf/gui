@@ -82,12 +82,20 @@ header h1{
 
 section#informacoes{
     padding: 10px;
-    text-align: center;
+    text-align: justify;
 
 }
 section#informacoes p{
     padding: 10px;
 }
+section#informacoes strong.topico{
+    margin-top: 20PX;
+    padding: 10px;
+    background-color: #748db32d;
+    display: block;
+}
+
+
 
 /* aside:
  Formação acadêmica + Cursos e Experiências */
